@@ -1,0 +1,15 @@
+{
+    "module": {
+        "name": "smartmirrorcafeteria",
+        "version": "1.0.0",
+        "description": "Speisepan der FH Kufstein",
+        "module_url": "https:\/\/www.fh-kufstein.ac.at\/Diner-Speisenangebot",
+        "category": "Kernmodule",
+        "last_update": "2018-04-11"
+    },
+    "creator": {
+        "name": "Kris Raich",
+        "contact": "krispin.raich@fh-kufstein.ac.at",
+        "website": "https:\/\/www.fh-kufstein.ac.at",
+    }
+}

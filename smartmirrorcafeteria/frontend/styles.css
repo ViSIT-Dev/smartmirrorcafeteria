@@ -1,0 +1,13 @@
+.cafList,
+.cafList p,
+.cafList h3 {
+    padding: 0;
+    margin: 0;
+}
+.cafList li{
+    display: none;
+}
+.cafList p,
+.cafList h3 {
+    margin: 0 0 5px;
+}
