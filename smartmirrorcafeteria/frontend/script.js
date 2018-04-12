@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    setInterval(updatMmenu, 10000);
+    setInterval(updateMenu, 10000);
+    updateMenu();
 });
 
 
 var showCountDay = 2;
-function updatMmenu() {
+function updateMenu() {
     $.ajax({
         dataType: "json",
         url: '../modules/smartmirrorcafeteria/assets/getMenue.php'
