@@ -1,1 +1,1 @@
-# smartmirrorcafeteria
+# smartmirrortwitter

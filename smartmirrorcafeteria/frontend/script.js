@@ -1,24 +1,26 @@
 $(document).ready(function () {
-    window.setTimeout(updatMmenu(), 10000);
+    setInterval(updatMmenu(), 10000);
 });
 
-var showCurrentDayOnly = true;
 
+var showCountDay = 2;
 function updatMmenu() {
     $.ajax({
         dataType: "json",
-        url: '../modules/smartmirrorcafeteria/assets/getMenue.php'
+        url: '../modules/smartmirrortwitter/assets/getMenue.php'
     }).done(function(data) {
         var now = new Date();
+        var currentCount = showCountDay;
         $.each(data, function(k, e){
             var dateOfRow = new Date(k);
-            if(showCurrentDayOnly && dateOfRow.getDay() == now.getDay()){
+            if(dateOfRow.getDay() >= now.getDay() && currentCount > 0){
                 $.each(e, function(k1, e1){
                     $("#day-" + dateOfRow.getDay()).show();
                     $("#day-" + dateOfRow.getDay() + " .menu-" + k1 + " .description").text(e1["description"])
                     $("#day-" + dateOfRow.getDay() + " .menu-" + k1 + " .allergens").text(e1["description"])
                     $("#day-" + dateOfRow.getDay() + " .menu-" + k1 + " .price").text(e1["price"])
                 });
+                currentCount--;
             }
         });
         

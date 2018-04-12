@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "Language: en_GB\n"
 
-msgid "smartmirrorcafeteria_title"
+msgid "smartmirrortwitter_title"
 msgstr "Cafeteria Menu"
 
-msgid "smartmirrorcafeteria_description"
+msgid "smartmirrortwitter_description"
 msgstr "Cafeteria Menu  ¯\_(ツ)_/¯"
