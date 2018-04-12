@@ -7,7 +7,7 @@ var showCountDay = 2;
 function updatMmenu() {
     $.ajax({
         dataType: "json",
-        url: '../modules/smartmirrortwitter/assets/getMenue.php'
+        url: '../modules/smartmirrorcafeteria/assets/getMenue.php'
     }).done(function(data) {
         var now = new Date();
         var currentCount = showCountDay;
