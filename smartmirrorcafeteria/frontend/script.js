@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setInterval(updatMmenu(), 10000);
+    setInterval(updatMmenu, 10000);
 });
 
 
